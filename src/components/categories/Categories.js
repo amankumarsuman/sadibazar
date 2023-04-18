@@ -39,7 +39,7 @@ const Categories = () => {
       img: pandal,
     },
     {
-      display: "Car & Rath",
+      display: "Car And Rath",
       img: car,
     },
     {

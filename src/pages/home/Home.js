@@ -15,11 +15,20 @@ import Loading from "../../components/loading/Loading";
 import { getRecommendations } from "../../actions/products";
 import DownloadIcon from "@mui/icons-material/Download";
 import certificate from "../../shared/assets/fasai.pdf";
+import { Button } from "@mui/material";
+import Timer from "./Timer";
+import axios from "axios";
+import ComboOfferCard from "../../components/product-card/CombiCard";
 const Home = ({ addProductToCart }) => {
   const products = useSelector((state) => state.products.recommendations);
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
-
+  const [comboOffer, setComboOffer] = useState();
+  useEffect(() => {
+    axios
+      .get("https://sadibazarapi.vercel.app/combo/")
+      .then((res) => setComboOffer(res?.data?.comboProducts));
+  }, []);
   useEffect(() => {
     const onSuccess = () => {
       setLoading(false);
@@ -38,6 +47,9 @@ const Home = ({ addProductToCart }) => {
       `<iframe src="${certificate}" style="width:100%;height:100%;"></iframe>`
     );
   }
+
+  //timer for offer
+  const endDate = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000); // end in 5 days
   return (
     <div className={styles["wrapper"]}>
       <div className={styles["hero"]}>
@@ -65,6 +77,39 @@ const Home = ({ addProductToCart }) => {
           <h1 className={"heading"}>Categories</h1>
         </div>
         <Categories />
+      </section>
+      <section>
+        <div className={"heading-wrapper"}>
+          <h1 className={"heading"}>
+            Combo Offer{" "}
+            <Button variant="outlined">
+              Offer Ends In <Timer endDate={endDate} />{" "}
+            </Button>
+          </h1>
+        </div>
+        <div className={styles["categories-wrapper"]}>
+          {comboOffer.map((item, i) => (
+            <div key={i} className={styles["category-wrapper"]}>
+              <div className={"heading2"}>
+                <Link to={`/products?category=${item.category}`}>
+                  {item.category}
+                </Link>
+              </div>
+              <div className={styles["products-wrapper"]}>
+                {item.products.map((product, j) => (
+                  <ComboOfferCard
+                    addProductToCart={addProductToCart}
+                    product={product}
+                    key={`${i}${j}`}
+                  />
+                ))}
+              </div>
+            </div>
+          ))}
+          <Link to={"/products"} className={`btn1 ${styles["see-all"]}`}>
+            See All
+          </Link>
+        </div>
       </section>
       <section>
         <div className={"heading-wrapper"}>

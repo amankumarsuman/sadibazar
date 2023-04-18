@@ -17,14 +17,13 @@
 // export const PAYMENTS_BASEURL = "https://naturalganicapi.onrender.com/payments";
 
 /************************************Backend on vercel********************************************* */
-export const USER_BASEURL = "https://naturalorganic.vercel.app/me";
-export const PRODUCTS_BASEURL = "https://naturalorganic.vercel.app/products";
-export const ORDERS_BASEURL = "https://naturalorganic.vercel.app/orders";
-export const ADD_ORDERS_BASEURL =
-  "https://naturalorganic.vercel.app/orders/add";
-export const SHIPPING_BASEURL = "https://naturalorganic.vercel.app/shipping";
+export const USER_BASEURL = "https://sadibazarapi.vercel.app/me";
+export const PRODUCTS_BASEURL = "https://sadibazarapi.vercel.app/products";
+export const ORDERS_BASEURL = "https://sadibazarapi.vercel.app/orders";
+export const ADD_ORDERS_BASEURL = "https://sadibazarapi.vercel.app/orders/add";
+export const SHIPPING_BASEURL = "https://sadibazarapi.vercel.app/shipping";
 export const NOTIFICATIONS_BASEURL =
-  "https://naturalorganic.vercel.app/notifications";
-export const PAYMENTS_BASEURL = "https://naturalorganic.vercel.app/payments";
+  "https://sadibazarapi.vercel.app/notifications";
+export const PAYMENTS_BASEURL = "https://sadibazarapi.vercel.app/payments";
 // export const PAYMENTS_BASEURL = "http://localhost:5000";
 //

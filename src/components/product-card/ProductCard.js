@@ -53,7 +53,7 @@ const ProductCard = ({ product, addProductToCart, productsPage = false }) => {
       ref={wrapperRef}
       className={`${styles["wrapper"]} ${
         productsPage ? styles["products-page"] : ""
-      } ${!product.stock && styles["out-of-stock"]}`}
+      } ${!product.availabe && styles["out-of-stock"]}`}
     >
       {addToCart && (
         <motion.img
@@ -95,13 +95,13 @@ const ProductCard = ({ product, addProductToCart, productsPage = false }) => {
           <div className={styles["details"]}>
             <p className={styles["weight"]}>
               {product.weight}
-              {product.measurement}
+              {product.vendor}
             </p>
             <p className={styles["price"]}>
               {Number(product.price).toFixed(2)} INR
             </p>
           </div>
-          {product.stock ? (
+          {product.availabe ? (
             // <div onClick={handleAddToCart} className={styles["add-to-cart"]}>
             //   Add to Cart
             // </div>

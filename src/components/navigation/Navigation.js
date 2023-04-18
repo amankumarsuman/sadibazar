@@ -98,7 +98,7 @@ const Navigation = ({ cartCount }) => {
             </Link>
           )}
           <Link onClick={closeMenu} to={"/products"}>
-            Products
+            Services
           </Link>
           {auth && (
             <Link
@@ -119,9 +119,9 @@ const Navigation = ({ cartCount }) => {
               Previous Orders
             </Link>
           )}
-          <Link onClick={closeMenu} to={"/shipping"}>
+          {/* <Link onClick={closeMenu} to={"/shipping"}>
             Track Shipping
-          </Link>
+          </Link> */}
           {admin && (
             <Link
               onClick={closeMenu}
