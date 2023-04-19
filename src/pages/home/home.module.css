@@ -73,6 +73,18 @@
     padding: 1em 1em;
     scroll-padding: 0 1em;
 }
+.combo-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1em;
+    grid-auto-columns: calc(100% / 1.8);
+    overflow-x: auto;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+    scroll-snap-type: inline mandatory;
+    padding: 1em 1em;
+    scroll-padding: 0 1em;
+}
 
 .products-wrapper > * {
     scroll-snap-align: start;

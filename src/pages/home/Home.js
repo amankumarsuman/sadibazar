@@ -48,6 +48,7 @@ const Home = ({ addProductToCart }) => {
     );
   }
 
+  console.log(comboOffer, "comboOffer");
   //timer for offer
   const endDate = new Date(Date.now() + 5 * 24 * 60 * 60 * 1000); // end in 5 days
   return (
@@ -89,21 +90,21 @@ const Home = ({ addProductToCart }) => {
         </div>
         <div className={styles["categories-wrapper"]}>
           {comboOffer.map((item, i) => (
-            <div key={i} className={styles["category-wrapper"]}>
+            <div key={i}>
               <div className={"heading2"}>
                 <Link to={`/products?category=${item.category}`}>
                   {item.category}
                 </Link>
               </div>
-              <div className={styles["products-wrapper"]}>
-                {item.products.map((product, j) => (
-                  <ComboOfferCard
-                    addProductToCart={addProductToCart}
-                    product={product}
-                    key={`${i}${j}`}
-                  />
-                ))}
-              </div>
+
+              {/* {item.products.map((product, j) => ( */}
+              <ComboOfferCard
+                addProductToCart={addProductToCart}
+                product={item?.products}
+                specialPrice={item?.specialPrice}
+                key={item?._id}
+              />
+              {/* ))} */}
             </div>
           ))}
           <Link to={"/products"} className={`btn1 ${styles["see-all"]}`}>
