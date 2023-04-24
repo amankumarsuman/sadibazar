@@ -48,7 +48,7 @@ export const postOrder = (token, data, onSuccess, onError) => async () => {
     // const { url } = await api
     //   .processPayment(token, data)
     //   .then((res) => res.data);
-    onSuccess("https://naturalganic.shop/orders");
+    onSuccess("https://sadibazar.tech/orders");
 
     // const ordersData = await api.postOrder(token, data).then((res) => res.data);
     // dispatch({ type: POST_ORDER, data: ordersData });

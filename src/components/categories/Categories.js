@@ -7,6 +7,8 @@ import hall from "../../shared/assets/categories/hall.jpeg";
 import catering from "../../shared/assets/categories/categing.avif";
 import car from "../../shared/assets/categories/car.png";
 import sherwani from "../../shared/assets/categories/sherwani.jpg";
+import invitation from "../../shared/assets/categories/invitation.jpg";
+import preweedingshoot from "../../shared/assets/categories/preweedingshoot.avif";
 import All from "../../shared/assets/why/all.jpg";
 import styles from "./categories.module.css";
 
@@ -49,6 +51,14 @@ const Categories = () => {
     {
       display: "Marriage Hall",
       img: hall,
+    },
+    {
+      display: "Pre & Post Weeding Shhot",
+      img: preweedingshoot,
+    },
+    {
+      display: "Invitation Card",
+      img: invitation,
     },
   ];
 

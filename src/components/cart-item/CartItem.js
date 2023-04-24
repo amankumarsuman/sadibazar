@@ -21,7 +21,7 @@ const CartItem = ({ product, updateQuantity, edit = true, id = false }) => {
           <div className={styles["quantity"]}>
             {product.quantity
               ? `Quantity: ${product.quantity}`
-              : `Stock:  ${product.stock}`}
+              : `Available:  ${product.available ? "Yes" : "No"}`}
           </div>
           {edit && (
             <>
