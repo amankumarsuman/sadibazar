@@ -19,6 +19,7 @@ import { Button } from "@mui/material";
 import Timer from "./Timer";
 import axios from "axios";
 import ComboOfferCard from "../../components/product-card/CombiCard";
+import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
 const Home = ({ addProductToCart }) => {
   const products = useSelector((state) => state.products.recommendations);
   const [loading, setLoading] = useState(true);
@@ -59,6 +60,7 @@ const Home = ({ addProductToCart }) => {
             All Your Marriage Item{" "}
             <span style={{ color: "yellow" }}>At One Place</span>
           </h1>
+          <h1 className={styles["rainbow-text"]}>WITH NO COST EMI</h1>
           <p>Making one stop sollution !</p>
           <Link className={"btn1"} to={"products"}>
             Order Now
@@ -142,20 +144,23 @@ const Home = ({ addProductToCart }) => {
       </section>
       <div className={styles["why"]}>
         <div className={styles["why-component"]}>
-          <img src={DeliveryIcon} alt={"Delivery"} />
+          {/* <img src={DeliveryIcon} alt={"Delivery"} /> */}
+          <AccountBalanceIcon sx={{ color: "green", fontSize: "2em" }} />
           <div className={"why-text"}>
-            <div className={styles["why-title"]}>Under 30 minutes</div>
-            <div className={styles["why-desc"]}>
-              Delivered on time - Every time!
+            <div className={styles["why-title"]}>
+              Flexible payment options including no-cost EMI
             </div>
+            <div className={styles["why-desc"]}>Terms & Conditions Apply</div>
           </div>
         </div>
         <div className={styles["why-component"]}>
           <img src={ReliableIcon} alt={"Reliable"} />
           <div className={"why-text"}>
-            <div className={styles["why-title"]}>Reliable</div>
+            <div className={styles["why-title"]}>
+              High-quality services provided by trusted vendors
+            </div>
             <div className={styles["why-desc"]}>
-              Get what you order - Every time!
+              Get 100% Satisfactory Services With Professionals
             </div>
           </div>
         </div>
@@ -168,7 +173,7 @@ const Home = ({ addProductToCart }) => {
             </div>
           </div>
         </div>
-        <div className={styles["why-component"]}>
+        {/* <div className={styles["why-component"]}>
           <img src={fassailogo} alt={"Reliable"} />
           <div className={"why-text"}>
             <div className={styles["why-title"]}>
@@ -181,7 +186,7 @@ const Home = ({ addProductToCart }) => {
               </span>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

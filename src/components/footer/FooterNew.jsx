@@ -1,7 +1,7 @@
 import { Grid, ListItem, ListItemText, Typography } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
-import logo from "../../shared/assets/logo2.png";
+import logo from "../../shared/sbazarlogo.png";
 import styles from "./footer.modules.css";
 import { Avatar, Divider, ListItemAvatar } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
@@ -110,14 +110,24 @@ function FooterNew() {
             }}
           />
           <Typography sx={myStyle}>
-            Welcome to our NaturalGanic, where we offer high-quality organic and
-            inorganic products that are safe, healthy, and eco-friendly. From
-            personal care to household essentials, we curate only the best
-            natural and responsibly manufactured options. We're committed to
-            fair trade and ethical sourcing, and we're dedicated to making
-            sustainable living easy and convenient for you. Shop with us today
-            and experience the difference that high-quality organic and
-            inorganic products can make in your life.
+            Welcome to Sadibazar, your one-stop-shop for all your wedding needs!
+            We understand that planning a wedding can be stressful,
+            <br />
+            time-consuming, and expensive. That's why we're here to make the
+            process as seamless and affordable as possible. At Sadibazar, we
+            believe that every couple deserves to have their dream wedding, no
+            matter their budget. That's why we work with some of the best
+            vendors in the industry to provide you with high-quality services at
+            competitive prices. Our team of wedding experts is here to guide you
+            every step of the way, ensuring that your wedding day is everything
+            you've ever wanted.
+            <br />
+            So why wait? Start planning your perfect wedding today with{" "}
+            <span
+              style={{ color: "green", fontWeight: "bold", fontSize: "20px" }}
+            >
+              Sadibazar.
+            </span>
           </Typography>
         </Grid>
         <Grid item xs={12} md={3}>
@@ -130,44 +140,29 @@ function FooterNew() {
             variant="h5"
             className={styles.textGradient}
           >
-            Organic Products
+            Services
           </Typography>
           {/* <Link to="/audit" style={{ cursor: "pointer" }}> */}
-          <Typography sx={myStyle}>
-            Milk <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Camera</Typography>
           {/* </Link> */}
           {/* <Link to="/expe-vetting" style={{ cursor: "pointer" }}> */}
-          <Typography sx={myStyle}>
-            Vegetables <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Cars & Rath</Typography>
           {/* </Link> */}
 
           {/* <Link to="/expe-diligence"> */}
-          <Typography sx={myStyle}>
-            Fruits <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Lehanga & Sherwani</Typography>
           {/* </Link> */}
           {/* <Link to="/design"> */}
-          <Typography sx={myStyle}>
-            Organic Fertilizer{" "}
-            <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Invitation Card</Typography>
           {/* </Link> */}
           {/* <Link to="/expe-creator"> */}
-          <Typography sx={myStyle}>
-            Meat <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>DJ & Trolly</Typography>
           {/* </Link> */}
           {/* <Link to="/expe-creator"> */}
-          <Typography sx={myStyle}>
-            Milky Chocolate <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Pandal & Stage</Typography>
           {/* </Link> */}
           {/* <Link to="/skinCare"> */}
-          <Typography sx={myStyle}>
-            Organic Skincare <span style={{ color: "red" }}>(coming soon)</span>
-          </Typography>
+          <Typography sx={myStyle}>Marriage Hall</Typography>
           {/* </Link> */}
 
           <Typography
@@ -175,8 +170,7 @@ function FooterNew() {
             // onClick={() => handleNavigate("https://metanmore.expelee.com/")}
             sx={myStyle}
           >
-            Milk Products(Ghee,Paneer,Khoya){" "}
-            <span style={{ color: "red" }}>(coming soon)</span>
+            Catering
           </Typography>
           {/* <Link to="nft"> */}
           <Typography sx={myStyle}>Many More to come....</Typography>
@@ -197,15 +191,12 @@ function FooterNew() {
 
           {/* <Link to="/coinLevel"> */}
           <Typography sx={myStyle}>
-            we are dedicated to promoting a more sustainable future by offering
-            natural and eco-friendly products that are affordable and
-            accessible. Our mission is to make it easy for our customers to make
-            responsible choices about the products they use. We are committed to
-            providing our customers with the information and resources they need
-            to make informed decisions about their health and the environment.
-            Our mission is to empower our customers to lead conscious and
-            sustainable lifestyles, without sacrificing quality or
-            affordability.
+            At Sadibazar, our mission is to make weddings more affordable,
+            convenient, and stress-free for every couple. We believe that
+            everyone deserves to have their dream wedding without sacrificing
+            quality or breaking the bank. By providing a one-stop-shop for all
+            wedding needs and flexible payment options including no-cost EMI, we
+            aim to empower couples to plan their perfect day with ease and joy.
           </Typography>
           {/* </Link> */}
 
@@ -262,10 +253,10 @@ function FooterNew() {
               </ListItemAvatar>
               <CustomizedListText
                 onClick={() =>
-                  (window.location = "mailto:business@naturalganic.shop")
+                  (window.location = "mailto:business@sadibazar.tech")
                 }
                 primary="EMAIL(For Vendor)"
-                secondary="business@naturalganic.shop"
+                secondary="mailto:business@sadibazar.tech"
               />
             </ListItem>
             <ListItem>
@@ -280,11 +271,9 @@ function FooterNew() {
                 </Avatar>
               </ListItemAvatar>
               <CustomizedListText
-                onClick={() =>
-                  (window.location = "mailto:business@naturalganic.shop")
-                }
+                onClick={() => (window.location = "mailto:info@sadibazar.tech")}
                 primary="EMAIL(For Customer)"
-                secondary="info@naturalganic.shop"
+                secondary="mailto:info@sadibazar.tech"
               />
             </ListItem>
 
@@ -449,9 +438,9 @@ function FooterNew() {
               <a
                 style={{ fontFamily: "poppins", fontSize: "1.3em" }}
                 className={styles.linkDecoration}
-                href="https://naturalganic.shop/"
+                href="https://sadibazar.tech/"
               >
-                NaturalGanic
+                Sadibazar PVT.LTD
               </a>
               <span
                 style={{
