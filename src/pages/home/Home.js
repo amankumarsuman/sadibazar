@@ -91,7 +91,7 @@ const Home = ({ addProductToCart }) => {
           </h1>
         </div>
         <div className={styles["categories-wrapper"]}>
-          {comboOffer.map((item, i) => (
+          {comboOffer?.map((item, i) => (
             <div key={i}>
               <div className={"heading2"}>
                 <Link to={`/products?category=${item.category}`}>

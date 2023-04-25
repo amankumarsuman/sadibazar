@@ -33,6 +33,22 @@ export const adminUpdateDatabase = (csv, mode) =>
 export const validateCart = (cart) =>
   API.post(`${PRODUCTS_BASEURL}/cart`, { cart });
 
+export const registerUser = (
+  email,
+  password,
+  mobile,
+  role,
+  first_name,
+  last_name
+) =>
+  API.post(`${USER_BASEURL}/register`, {
+    email,
+    password,
+    mobile,
+    role,
+    first_name,
+    last_name,
+  });
 export const authLogin = (email, password) =>
   API.post(`${USER_BASEURL}/login`, { email, password });
 export const verify = () => API.post(`${USER_BASEURL}/verify`);

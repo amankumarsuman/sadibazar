@@ -3,6 +3,7 @@ import Authentication from "../Authentication";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { useState } from "react";
+import { registerUser } from "../../../actions/auth";
 
 const Signup = () => {
   const dispatch = useDispatch();
@@ -24,7 +25,7 @@ const Signup = () => {
   };
 
   const handleSignup = () => {
-    const { email, password } = data;
+    const { email, password, mobile, role, first_name, last_name } = data;
 
     if (!email) return setError("Enter an email address");
 
@@ -42,7 +43,18 @@ const Signup = () => {
     const onError = (e) => {
       setError(e.message);
     };
-
+    dispatch(
+      registerUser(
+        email,
+        password,
+        mobile,
+        role,
+        first_name,
+        last_name,
+        onSuccess,
+        onError
+      )
+    );
     // dispatch(
     //   signupData(
     //     email,
@@ -73,12 +85,43 @@ const Signup = () => {
         </div>
       </div>
       <div className={styles["form"]}>
-        <input placeholder={"First Name"} />
-        <input placeholder={"Last Name"} />
-        <input placeholder={"Email"} />
-        <input placeholder={"Password"} type={"password"} />
-        <input placeholder={"Mobile"} />
-        <input placeholder={"Role"} />
+        <input
+          onChange={(e) => handleChange(e)}
+          name={"first_name"}
+          value={data?.first_name}
+          placeholder={"First Name"}
+        />
+        <input
+          onChange={(e) => handleChange(e)}
+          name={"last_name"}
+          value={data?.last_name}
+          placeholder={"Last Name"}
+        />
+        <input
+          value={data?.email}
+          name="email"
+          onChange={(e) => handleChange(e)}
+          placeholder={"Email"}
+        />
+        <input
+          name="password"
+          value={data?.password}
+          onChange={(e) => handleChange(e)}
+          placeholder={"Password"}
+          type={"password"}
+        />
+        <input
+          name="mobile"
+          value={data?.mobile}
+          onChange={(e) => handleChange(e)}
+          placeholder={"Mobile"}
+        />
+        <input
+          name="role"
+          value={data?.role}
+          onChange={(e) => handleChange(e)}
+          placeholder={"Role"}
+        />
         <button onClick={handleSignup} className={"btn1"}>
           Sign Up
         </button>

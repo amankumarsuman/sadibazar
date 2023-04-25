@@ -21,14 +21,18 @@ const INITIAL_PRODUCT = {
 const AdminNewProduct = () => {
   const dispatch = useDispatch();
   const categories = [
-    "Beverages",
+    "Lehanga",
 
-    "Chips and Crackers",
-    "Dairy and Eggs",
-    "Fruits and Vegetables",
-    "Meat Poultry and Seafood",
-    "Breakfast",
-    "Ice Cream",
+    "DJ And Trolly",
+    "Photography",
+    "Sherwani",
+    "Pandal And Stage",
+    "Car And Rath",
+    "Catering",
+    "Marriage Hall",
+    "Pre",
+    "Invitation Card",
+    "Jwellery",
   ];
   const [state, setState] = useState(FORM);
   const [error, setError] = useState("");
@@ -51,8 +55,7 @@ const AdminNewProduct = () => {
   };
 
   const handleSubmit = () => {
-    if (!product.product_id || product.product_id.length !== 6)
-      return setError("Enter a 6 characters product id");
+    if (!product.product_id) return setError("Enter a  product id");
 
     if (!product.name) return setError("Enter a valid product name");
 
@@ -109,7 +112,6 @@ const AdminNewProduct = () => {
       </div>
       <div className={styles["form"]}>
         <input
-          maxLength={6}
           placeholder={"Product Id"}
           name={"product_id"}
           value={product.product_id}

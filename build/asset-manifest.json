@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a5afcd99.css",
-    "main.js": "/static/js/main.24eadf71.js",
+    "main.js": "/static/js/main.8a6f6b58.js",
     "static/media/bg1.jpg": "/static/media/bg1.c3560152df1b7576fc69.jpg",
     "static/media/car.png": "/static/media/car.896f3a3bc74fbf59cd68.png",
     "static/media/DJ.jpg": "/static/media/DJ.f901d00350e934a80f09.jpg",
@@ -13,21 +13,23 @@
     "static/media/fasai.pdf": "/static/media/fasai.dcf20caf7a6746e525c9.pdf",
     "static/media/delivery.png": "/static/media/delivery.16892d23912d51cf8e30.png",
     "static/media/background.png": "/static/media/background.f91c4f2c65078ba6b6ba.png",
+    "static/media/invitation.jpg": "/static/media/invitation.15ef189ff4eda4d2ec5c.jpg",
     "static/media/hall.jpeg": "/static/media/hall.694b5effba003e7d68a6.jpeg",
     "static/media/stage.jpg": "/static/media/stage.b563744dd9d7989d1fa6.jpg",
     "static/media/FSSAI_logo.png": "/static/media/FSSAI_logo.ff36cd5bc3fac92b77e6.png",
     "static/media/sbazarlogo.png": "/static/media/sbazarlogo.711e7e55325cf74a5436.png",
     "static/media/all.jpg": "/static/media/all.1272a928937d45999309.jpg",
+    "static/media/preweedingshoot.avif": "/static/media/preweedingshoot.a07d864de7e062d9fd33.avif",
     "static/media/categing.avif": "/static/media/categing.32330be20ec77f1ffa87.avif",
     "static/media/warning.png": "/static/media/warning.7400d7f2347ac315c9e2.png",
     "static/media/success.png": "/static/media/success.f36adc5110b37036b546.png",
     "static/media/order.png": "/static/media/order.65b57dc4187c083210d8.png",
     "index.html": "/index.html",
     "main.a5afcd99.css.map": "/static/css/main.a5afcd99.css.map",
-    "main.24eadf71.js.map": "/static/js/main.24eadf71.js.map"
+    "main.8a6f6b58.js.map": "/static/js/main.8a6f6b58.js.map"
   },
   "entrypoints": [
     "static/css/main.a5afcd99.css",
-    "static/js/main.24eadf71.js"
+    "static/js/main.8a6f6b58.js"
   ]
 }
