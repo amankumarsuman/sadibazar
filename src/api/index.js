@@ -1,9 +1,11 @@
 import axios from "axios";
 import {
   ADD_ORDERS_BASEURL,
+  NOTIFICATIONS_BASEURL,
   ORDERS_BASEURL,
   PAYMENTS_BASEURL,
   PRODUCTS_BASEURL,
+  SEND_MAIL_BASE_URL,
   SHIPPING_BASEURL,
   USER_BASEURL,
 } from "./BaseURLs";
@@ -69,5 +71,7 @@ export const updateOrder = (id, status) =>
 
 export const processPayment = (token, data) =>
   API.post(`${PAYMENTS_BASEURL}`, { token, data });
-export const postOrder = (token, data) =>
+export const postOrder = (token, data) => {
   API.post(`${ORDERS_BASEURL}`, { token, data });
+  API.post(`${SEND_MAIL_BASE_URL}`, { token, data });
+};

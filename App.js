@@ -30,7 +30,13 @@ import Success from "./pages/checkout/success";
 import ShipmentId from "./pages/shipment/id/ShipmentId";
 import OrderId from "./pages/order/id/OrderId";
 import FooterNew from "./components/footer/FooterNew";
+import { Amplify } from "aws-amplify";
 
+import { withAuthenticator } from "@aws-amplify/ui-react";
+import "@aws-amplify/ui-react/styles.css";
+
+import awsExports from "./aws-exports";
+Amplify.configure(awsExports);
 const cartInitialization = JSON.parse(localStorage.getItem("cart")) || [];
 
 const App = () => {

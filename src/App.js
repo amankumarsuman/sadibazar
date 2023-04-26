@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/home/Home";
 import "./shared/css/master.css";
 import Navigation from "./components/navigation/Navigation";
@@ -30,6 +30,7 @@ import Success from "./pages/checkout/success";
 import ShipmentId from "./pages/shipment/id/ShipmentId";
 import OrderId from "./pages/order/id/OrderId";
 import FooterNew from "./components/footer/FooterNew";
+import ContactForm from "./components/contactForm/ContactUs";
 
 const cartInitialization = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -97,7 +98,7 @@ const App = () => {
   }, [cart]);
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <Navigation cartCount={cartCount} />
       <Routes>
@@ -109,6 +110,7 @@ const App = () => {
           path={"/products"}
           element={<Products addProductToCart={addProductToCart} />}
         />
+        <Route path={"/partner-register"} element={<ContactForm />} />
         <Route
           path={"/cart"}
           element={
@@ -191,7 +193,7 @@ const App = () => {
       </Routes>
       {/* <Footer/> */}
       <FooterNew />
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

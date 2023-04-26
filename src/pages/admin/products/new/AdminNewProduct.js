@@ -33,6 +33,7 @@ const AdminNewProduct = () => {
     "Pre",
     "Invitation Card",
     "Jwellery",
+    "Furniture",
   ];
   const [state, setState] = useState(FORM);
   const [error, setError] = useState("");

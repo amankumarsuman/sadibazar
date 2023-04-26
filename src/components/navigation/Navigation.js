@@ -100,6 +100,9 @@ const Navigation = ({ cartCount }) => {
           <Link onClick={closeMenu} to={"/products"}>
             Services
           </Link>
+          <Link onClick={closeMenu} to={"/partner-register"}>
+            Partner With Us
+          </Link>
           {auth && (
             <Link
               onClick={closeMenu}

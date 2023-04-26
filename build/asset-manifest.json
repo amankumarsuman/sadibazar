@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5afcd99.css",
-    "main.js": "/static/js/main.8a6f6b58.js",
+    "main.css": "/static/css/main.c23e7467.css",
+    "main.js": "/static/js/main.f6fc076d.js",
     "static/media/bg1.jpg": "/static/media/bg1.c3560152df1b7576fc69.jpg",
     "static/media/car.png": "/static/media/car.896f3a3bc74fbf59cd68.png",
     "static/media/DJ.jpg": "/static/media/DJ.f901d00350e934a80f09.jpg",
@@ -21,15 +21,16 @@
     "static/media/all.jpg": "/static/media/all.1272a928937d45999309.jpg",
     "static/media/preweedingshoot.avif": "/static/media/preweedingshoot.a07d864de7e062d9fd33.avif",
     "static/media/categing.avif": "/static/media/categing.32330be20ec77f1ffa87.avif",
+    "static/media/furniture.webp": "/static/media/furniture.fdd59c59c16683fa9690.webp",
     "static/media/warning.png": "/static/media/warning.7400d7f2347ac315c9e2.png",
     "static/media/success.png": "/static/media/success.f36adc5110b37036b546.png",
     "static/media/order.png": "/static/media/order.65b57dc4187c083210d8.png",
     "index.html": "/index.html",
-    "main.a5afcd99.css.map": "/static/css/main.a5afcd99.css.map",
-    "main.8a6f6b58.js.map": "/static/js/main.8a6f6b58.js.map"
+    "main.c23e7467.css.map": "/static/css/main.c23e7467.css.map",
+    "main.f6fc076d.js.map": "/static/js/main.f6fc076d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5afcd99.css",
-    "static/js/main.8a6f6b58.js"
+    "static/css/main.c23e7467.css",
+    "static/js/main.f6fc076d.js"
   ]
 }

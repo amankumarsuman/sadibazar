@@ -10,6 +10,7 @@ const OrderSummary = ({ order }) => {
         </div>
         <div className={styles["id"]}>#{order.order_id}</div>
       </div>
+      <div className={styles["id"]}>Mobile-#{order.phone_number}</div>
       <div className={styles["content"]}>
         {order.products.map((product, i) => (
           <div key={i} className={styles["product-wrapper"]}>
@@ -20,6 +21,7 @@ const OrderSummary = ({ order }) => {
               {product.price}INR x{product.quantity || 1}
             </div>
             <div className={styles["product-name"]}>{product.name}</div>
+            <div className={styles["product-name"]}>{product.phone_number}</div>
           </div>
         ))}
       </div>

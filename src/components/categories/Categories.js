@@ -9,6 +9,7 @@ import car from "../../shared/assets/categories/car.png";
 import sherwani from "../../shared/assets/categories/sherwani.jpg";
 import invitation from "../../shared/assets/categories/invitation.jpg";
 import preweedingshoot from "../../shared/assets/categories/preweedingshoot.avif";
+import furniture from "../../shared/assets/categories/furniture.webp";
 import All from "../../shared/assets/why/all.jpg";
 import styles from "./categories.module.css";
 
@@ -41,6 +42,10 @@ const Categories = () => {
       img: pandal,
     },
     {
+      display: "Furniture",
+      img: furniture,
+    },
+    {
       display: "Car And Rath",
       img: car,
     },
@@ -56,6 +61,7 @@ const Categories = () => {
       display: "Pre & Post Weeding Shhot",
       img: preweedingshoot,
     },
+
     {
       display: "Invitation Card",
       img: invitation,

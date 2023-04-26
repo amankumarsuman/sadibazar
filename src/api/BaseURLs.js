@@ -24,6 +24,8 @@ export const ADD_ORDERS_BASEURL = "https://sadibazarapi.vercel.app/orders/add";
 export const SHIPPING_BASEURL = "https://sadibazarapi.vercel.app/shipping";
 export const NOTIFICATIONS_BASEURL =
   "https://sadibazarapi.vercel.app/notifications";
+export const SEND_MAIL_BASE_URL =
+  "https://sadibazarapi.vercel.app/notifications/ordermail";
 export const PAYMENTS_BASEURL = "https://sadibazarapi.vercel.app/payments";
 // export const PAYMENTS_BASEURL = "http://localhost:5000";
 //

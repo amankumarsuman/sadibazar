@@ -1,7 +1,7 @@
 .wrapper {
-    display: grid;
-    grid-template-columns: var(--GRID-TEMPLATE);
-    grid-auto-rows: 2em;
+    /* display: grid; */
+    /* grid-template-columns: var(--GRID-TEMPLATE); */
+    /* grid-auto-rows: 2em; */
     color: var(--NEUTRAL_4);
     gap: .5em;
     transition: all .3s ease-out;
@@ -14,8 +14,12 @@
     overflow-x: auto;
     white-space: nowrap;
     align-self: center;
+    
 }
-
+.id{
+    /* width: 100%; */
+    /* border: 1px solid red; */
+}
 .wrapper div::-webkit-scrollbar {
     display: none;
 }

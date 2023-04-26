@@ -223,9 +223,9 @@ input, select, option {
     outline: none;
 }
 
-input:focus-visible {
+/* input:focus-visible {
     border: 2px solid var(--PRIMARY);
-}
+} */
 
 button {
     border: none;
